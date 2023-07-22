@@ -7,7 +7,7 @@ namespace Calculator.Operations.MathOperations
     {
         public void Multiply(int n1, int n2)
         {
-            Console.WriteLine("Digite o npumero que deseja multiplicar: ");
+            Console.WriteLine("Digite o número que deseja multiplicar: ");
             n1 = int.Parse(Console.ReadLine());
             Console.WriteLine($"Digite por quantas vezes deseja multiplicar {n1}: ");
             n2 = int.Parse(Console.ReadLine());
