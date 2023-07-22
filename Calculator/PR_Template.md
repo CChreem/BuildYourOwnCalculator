@@ -1,7 +1,0 @@
-```yaml
-
-Objetivo:
-Criticidade:
-Dono:
-
-```
