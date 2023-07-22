@@ -1,6 +1,6 @@
 ﻿namespace Calculator.Operations.Interfaces
 {
-    public interface ISum
+    public interface IAddition
     {
         void Sum(int number1, int number2);
     }

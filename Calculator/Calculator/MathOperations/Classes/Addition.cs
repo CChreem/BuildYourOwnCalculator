@@ -3,7 +3,7 @@ using System;
 
 namespace Calculator.Operations.MathOperations
 {
-    public class Addition : ISum
+    public class Addition : IAddition
     {
         public void Sum(int n1, int n2)
         {

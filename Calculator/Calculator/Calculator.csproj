@@ -47,7 +47,7 @@
     <Compile Include="MathOperations\Interfaces\IExponentiation.cs" />
     <Compile Include="MathOperations\Interfaces\IMultiplication.cs" />
     <Compile Include="MathOperations\Interfaces\ISubstraction.cs" />
-    <Compile Include="MathOperations\Interfaces\ISum.cs" />
+    <Compile Include="MathOperations\Interfaces\IAddition.cs" />
     <Compile Include="MathOperations\Classes\Division.cs" />
     <Compile Include="MathOperations\Classes\Exponentiation.cs" />
     <Compile Include="MathOperations\Classes\Multiplication.cs" />

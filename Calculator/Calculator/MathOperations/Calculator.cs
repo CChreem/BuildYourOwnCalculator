@@ -6,7 +6,7 @@ namespace Calculator.Operations
 {
     public class Calculadora
     {
-        private readonly ISum _sum = new Addition();
+        private readonly IAddition _sum = new Addition();
         private readonly ISubstraction _substraction = new Substraction();
         private readonly IMultiplication _multiplication = new Multiplication();
         private readonly IDivision _divide = new Division();
