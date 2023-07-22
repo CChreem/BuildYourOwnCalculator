@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Calculator.Operations.Interfaces
+﻿namespace Calculator.Operations.Interfaces
 {
     public interface IDivision
     {
