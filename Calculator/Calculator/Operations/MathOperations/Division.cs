@@ -20,8 +20,10 @@ namespace Calculator.Operations.MathOperations
                 int res = n1 / n2;
                 Console.WriteLine($"A divisão de {n1} por {n2} é: {res}\n");
             }
-
-            Console.WriteLine("Não é possível dividir por zero\n");
+            else
+            {
+                Console.WriteLine("Não é possível dividir por zero\n");
+            }
         }
 
         public void GetTheRestOfDivision(int n1, int n2)
@@ -37,8 +39,11 @@ namespace Calculator.Operations.MathOperations
 
                 Console.WriteLine($"O resto da divisão de {n1} por {n2} é: {res}\n");
             }
+            else
+            {
+                Console.WriteLine("Não é possível dividir por zero\n");
 
-            Console.WriteLine("Não é possível dividir por zero\n");
+            }
         }
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Calculator.Operations
 {
-    public class Calculator
+    public class Calculadora
     {
-        private readonly IMathOperation operations;
+        private readonly IMathOperation operations = new MathOperation();
 
         public void Operation()
         {
@@ -21,7 +21,7 @@ namespace Calculator.Operations
             {
                 Console.WriteLine("\tCALCULADORA");
 
-                Console.WriteLine("Digite a operação que deseja realizar: " + "\n \"1\" Somar\n \"2\" Subtrair\n \"3\" Multiplicar\n \"4\" Dividir\n \"5\" Resto da Divisão\n \"5\" Potenciação\n \"0\" sair");
+                Console.WriteLine("Digite a operação que deseja realizar: " + "\n \"1\" Somar\n \"2\" Subtrair\n \"3\" Multiplicar\n \"4\" Dividir\n \"5\" Resto da Divisão\n \"6\" Potenciação\n \"0\" sair");
                 mathOperation = Console.ReadLine();
 
                 switch (mathOperation)
@@ -48,7 +48,7 @@ namespace Calculator.Operations
                         OnOff = false;
                         break;
                     default:
-                        Console.WriteLine("Opção inválida, por favor escola uma opção válida\n");
+                        Console.WriteLine("Opção inválida\n");
                         break;
                 }
             }

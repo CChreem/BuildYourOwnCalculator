@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Operations\IMathOperation.cs" />
+    <Compile Include="Operations\Interfaces\ISum.cs" />
     <Compile Include="Operations\MathOperation.cs" />
     <Compile Include="Operations\MathOperations\Division.cs" />
     <Compile Include="Operations\MathOperations\Exponentiation.cs" />
@@ -57,5 +58,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

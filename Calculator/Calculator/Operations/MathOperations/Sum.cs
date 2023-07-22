@@ -15,7 +15,9 @@ namespace Calculator.Operations.MathOperations
 
             Console.WriteLine($"A soma de {n1} e {n2} é: {res}\n");
 
+            Console.WriteLine("Aperte ENTER para continuar\n");
             Console.ReadKey();
+
         }
     }
 }

@@ -1,10 +1,13 @@
 ﻿using Calculator.Operations;
 using System;
+using System.Diagnostics;
 
-internal class Program
+ class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-       
+        var calculadora = new Calculadora();
+        Console.WriteLine("Calculadora");
+        calculadora.Operation();
     }
 }

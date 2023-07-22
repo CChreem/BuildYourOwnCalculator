@@ -5,11 +5,11 @@ namespace Calculator.Operations
 {
     public class MathOperation : IMathOperation
     {
-        private readonly Sum _sum;
-        private readonly Substraction _substraction;
-        private readonly Multiply _multiply;
-        private readonly Division _divide;
-        private readonly Exponentiation _exponentiation;
+        private readonly Sum _sum = new Sum();
+        private readonly Substraction _substraction = new Substraction();
+        private readonly Multiply _multiply = new Multiply();
+        private readonly Division _divide = new Division();
+        private readonly Exponentiation _exponentiation = new Exponentiation();
         
         public void FindTheSum(int number1, int number2)
         {
