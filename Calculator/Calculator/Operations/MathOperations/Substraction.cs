@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculator.Operations.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Calculator.Operations.MathOperations
 {
-    public class Substraction
+    public class Substraction : ISubstraction
     {
-        public void FindTheDifference(int n1, int n2)
+        public void Substract(int n1, int n2)
         {
             Console.WriteLine("Digite o primeiro número: ");
             n1 = int.Parse(Console.ReadLine());
@@ -17,7 +18,9 @@ namespace Calculator.Operations.MathOperations
 
             int res = n1 - n2;
 
-            Console.WriteLine($"A subtração de {n1} e {n2} é: {res}\n");
+            Console.WriteLine($"\nA subtração de {n1} e {n2} é: {res}\n");
+            Console.WriteLine("----------------------------------\n");
+
         }
     }
 }

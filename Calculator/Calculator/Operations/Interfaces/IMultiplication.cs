@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Calculator.Operations.Interfaces
 {
-    public interface ISum
+    public interface IMultiplication
     {
-        void Sum(int number1, int number2);
+        void Multiply(int number1, int number2);
     }
 }

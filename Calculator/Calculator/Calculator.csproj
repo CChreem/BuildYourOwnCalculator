@@ -43,12 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Operations\IMathOperation.cs" />
+    <Compile Include="Operations\Interfaces\IDivision.cs" />
+    <Compile Include="Operations\Interfaces\IExponentiation.cs" />
+    <Compile Include="Operations\Interfaces\IMultiplication.cs" />
+    <Compile Include="Operations\Interfaces\ISubstraction.cs" />
     <Compile Include="Operations\Interfaces\ISum.cs" />
-    <Compile Include="Operations\MathOperation.cs" />
     <Compile Include="Operations\MathOperations\Division.cs" />
     <Compile Include="Operations\MathOperations\Exponentiation.cs" />
-    <Compile Include="Operations\MathOperations\Multiply.cs" />
+    <Compile Include="Operations\MathOperations\Multiplication.cs" />
     <Compile Include="Operations\MathOperations\Substraction.cs" />
     <Compile Include="Operations\MathOperations\Sum.cs" />
     <Compile Include="Operations\Calculator.cs" />

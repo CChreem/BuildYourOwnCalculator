@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculator.Operations.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Calculator.Operations.MathOperations
 {
-    public class Division
+    public class Division : IDivision
     {
         public void FindTheDivision(int n1, int n2)
         {
@@ -18,7 +19,9 @@ namespace Calculator.Operations.MathOperations
             if (n2 != 0)
             {
                 int res = n1 / n2;
-                Console.WriteLine($"A divisão de {n1} por {n2} é: {res}\n");
+                Console.WriteLine($"\nA divisão de {n1} por {n2} é: {res}\n");
+                Console.WriteLine("----------------------------------\n");
+
             }
             else
             {

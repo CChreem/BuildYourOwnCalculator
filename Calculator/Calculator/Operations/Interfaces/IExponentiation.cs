@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Calculator.Operations.Interfaces
 {
-    public interface ISum
+    public interface IExponentiation
     {
-        void Sum(int number1, int number2);
+        void GetTheResultOfExponentiation(int number1, int number2);
     }
 }

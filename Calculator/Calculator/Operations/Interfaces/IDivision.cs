@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Calculator.Operations.Interfaces
 {
-    public interface ISum
+    public interface IDivision
     {
-        void Sum(int number1, int number2);
+        void FindTheDivision(int number1, int number2);
+        void GetTheRestOfDivision(int number1, int number2);
+
     }
 }

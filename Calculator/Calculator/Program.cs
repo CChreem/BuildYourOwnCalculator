@@ -7,7 +7,6 @@ using System.Diagnostics;
     static void Main(string[] args)
     {
         var calculadora = new Calculadora();
-        Console.WriteLine("Calculadora");
         calculadora.Operation();
     }
 }

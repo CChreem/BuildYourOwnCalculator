@@ -1,14 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Calculator.Operations.Interfaces;
+using Calculator.Operations.MathOperations;
+using System;
 
 namespace Calculator.Operations
 {
     public class Calculadora
     {
-        private readonly IMathOperation operations = new MathOperation();
+        private readonly ISum _sum = new Addition();
+        private readonly ISubstraction _substraction = new Substraction();
+        private readonly IMultiplication _multiplication = new Multiplication();
+        private readonly IDivision _divide = new Division();
+        private readonly IExponentiation _exponentiation = new Exponentiation();
+
 
         public void Operation()
         {
@@ -27,22 +30,22 @@ namespace Calculator.Operations
                 switch (mathOperation)
                 {
                     case "1":
-                        operations.FindTheSum(number1, number2);
+                        _sum.Sum(number1, number2);
                         break;
                     case "2":
-                        operations.FindTheDifference(number1, number2);
+                        _substraction.Substract(number1, number2);
                         break;
                     case "3":
-                        operations.FindTheMultiplication(number1, number2);
+                        _multiplication.Multiply(number1, number2);
                         break;
                     case "4":
-                        operations.FindTheDivision(number1, number2);
+                        _divide.FindTheDivision(number1, number2);
                         break;
                     case "5":
-                        operations.GetTheRestOfDivision(number1, number2);
+                        _divide.GetTheRestOfDivision(number1, number2);
                         break;
                     case "6":
-                        operations.GetTheResultOfExponentiation(number1, number2);
+                        _exponentiation.GetTheResultOfExponentiation(number1, number2);
                         break;
                     case "0":
                         OnOff = false;

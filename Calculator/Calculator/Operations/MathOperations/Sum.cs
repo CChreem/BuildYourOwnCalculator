@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Calculator.Operations.Interfaces;
+using System;
 
 namespace Calculator.Operations.MathOperations
 {
-    public class Sum
+    public class Addition : ISum
     {
-        public void FindTheSum(int n1, int n2)
+        public void Sum(int n1, int n2)
         {
             Console.WriteLine("Digite o primeiro valor: ");
             n1 = int.Parse(Console.ReadLine());
@@ -13,10 +14,8 @@ namespace Calculator.Operations.MathOperations
 
             int res = n1 + n2;
 
-            Console.WriteLine($"A soma de {n1} e {n2} é: {res}\n");
-
-            Console.WriteLine("Aperte ENTER para continuar\n");
-            Console.ReadKey();
+            Console.WriteLine($"\nA soma de {n1} e {n2} é: {res}");
+            Console.WriteLine("----------------------------------\n");
 
         }
     }
