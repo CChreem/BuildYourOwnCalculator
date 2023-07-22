@@ -52,7 +52,7 @@
     <Compile Include="MathOperations\Classes\Exponentiation.cs" />
     <Compile Include="MathOperations\Classes\Multiplication.cs" />
     <Compile Include="MathOperations\Classes\Substraction.cs" />
-    <Compile Include="MathOperations\Classes\Sum.cs" />
+    <Compile Include="MathOperations\Classes\Addition.cs" />
     <Compile Include="MathOperations\Calculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
